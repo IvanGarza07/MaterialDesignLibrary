@@ -58,6 +58,14 @@ dependencies {
     compile 'com.github.IvanGarza07:MaterialDesignLibrary:1.0.1'
 }</pre></div>
 
+
+<p>If you use other libraries requiring nineoldandroids and appcompat-v7 like <a href="https://github.com/rengwuxian/MaterialEditText/">MaterialEditText</a> or MaterialSpinner make sure to exclude them :</p>
+
+<div class="highlight highlight-source-groovy"><pre>compile (<span class="pl-s"><span class="pl-pds">'</span>com.github.ganfra:material-spinner:1.1.1<span class="pl-pds">'</span></span>){
+        exclude <span class="pl-c1">group</span>: <span class="pl-s"><span class="pl-pds">'</span>com.nineoldandroids<span class="pl-pds">'</span></span>, <span class="pl-c1">module</span>: <span class="pl-s"><span class="pl-pds">'</span>library<span class="pl-pds">'</span></span>
+        exclude <span class="pl-c1">group</span>: <span class="pl-s"><span class="pl-pds">'</span>com.android.support<span class="pl-pds">'</span></span>, <span class="pl-c1">module</span>: <span class="pl-s"><span class="pl-pds">'</span>appcompat-v7<span class="pl-pds">'</span></span>
+}</pre></div>
+
 <p>Some components have custom attributes, if you want use them, you must add this line in your xml file in the first component:</p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">RelativeLayout</span> <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">android</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res/android<span class="pl-pds">"</span></span>
@@ -71,7 +79,7 @@ dependencies {
 <p>If you are going to use a ScrollView, it is recommended that you use the CustomScrollView provided in this library to avoid problems with the custom components.
 To use this component:</p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ScrollView 
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ScrollView 
    <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">android</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res/android<span class="pl-pds">"</span></span>
    <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">materialdesign</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
    <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/scroll<span class="pl-pds">"</span></span>
@@ -88,7 +96,7 @@ To use this component:</p>
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/flat_button.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/flat_button.png" alt="flat button" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ButtonFlat
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ButtonFlat
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/buttonflat<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -99,7 +107,7 @@ To use this component:</p>
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/rectangle_button.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/rectangle_button.png" alt="rectangle button" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ButtonRectangle
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ButtonRectangle
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/button<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -122,7 +130,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
     <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
     &gt;
     <span class="pl-c">&lt;!-- ... XML CODE --&gt;</span>
-    &lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ButtonFloat
+    &lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ButtonFloat
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/buttonFloat<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -138,7 +146,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/float_small_button.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/float_small_button.png" alt="float small button" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ButtonFloatSmall
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ButtonFloatSmall
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/buttonFloatSmall<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -151,7 +159,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/checkbox.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/checkbox.png" alt="checkbox" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.CheckBox
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.CheckBox
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/checkBox<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -162,7 +170,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/switch.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/switch.png" alt="switch" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.Switch
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.Switch
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/switchView<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -175,7 +183,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/progress_bar_circular_indeterminate.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/progress_bar_circular_indeterminate.png" alt="progress bar circular indeterminate" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ProgressBarCircularIndeterminate
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ProgressBarCircularIndeterminate
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/progressBarCircularIndeterminate<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>32dp<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>32dp<span class="pl-pds">"</span></span>
@@ -185,7 +193,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/progress_bar_indeterminate.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/progress_bar_indeterminate.png" alt="progress bar indeterminate" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ProgressBarIndeterminate
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ProgressBarIndeterminate
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/progressBarIndeterminate<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>fill_parent<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -195,7 +203,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/progress_bar_indeterminate_determinate.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/progress_bar_indeterminate_determinate.png" alt="Progress bar indeterminate determinate" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ProgressBarIndeterminateDeterminate
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ProgressBarIndeterminateDeterminate
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/progressBarIndeterminateDeterminate<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>fill_parent<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -211,7 +219,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/progress_bar_determinate.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/progress_bar_determinate.png" alt="Progress bar determinate" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.ProgressBarDeterminate
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ProgressBarDeterminate
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/progressDeterminate<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>fill_parent<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -225,7 +233,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/slider.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/slider.png" alt="Slider" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.Slider
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.Slider
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/slider<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>fill_parent<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -238,7 +246,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/slider_with_number_indicator.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/slider_with_number_indicator.png" alt="Slider with number indicator" style="max-width:100%;"></a></p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.gc.materialdesign.views.Slider
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.Slider
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/slider<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>fill_parent<span class="pl-pds">"</span></span>
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
@@ -297,24 +305,11 @@ Add floating label text, hint and error messages.</p>
 
 <p><a href="/ganfra/MaterialSpinner/blob/master/screenshots/screenshot.gif" target="_blank"><img src="/ganfra/MaterialSpinner/raw/master/screenshots/screenshot.gif" alt="MaterialSpinner" style="max-width:100%;"></a></p>
 
-<h2><a id="user-content-gradle-dependency" class="anchor" href="#gradle-dependency" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Gradle Dependency</h2>
-
-<p>Use this dependency in your build.gradle file to reference this library in your project</p>
-
-<div class="highlight highlight-source-groovy"><pre>compile <span class="pl-s"><span class="pl-pds">'</span>com.github.ganfra:material-spinner:1.1.1<span class="pl-pds">'</span></span></pre></div>
-
-<p>If you use other libraries requiring nineoldandroids and appcompat-v7 like <a href="https://github.com/rengwuxian/MaterialEditText/">MaterialEditText</a> make sure to exclude them :</p>
-
-<div class="highlight highlight-source-groovy"><pre>compile (<span class="pl-s"><span class="pl-pds">'</span>com.github.ganfra:material-spinner:1.1.1<span class="pl-pds">'</span></span>){
-        exclude <span class="pl-c1">group</span>: <span class="pl-s"><span class="pl-pds">'</span>com.nineoldandroids<span class="pl-pds">'</span></span>, <span class="pl-c1">module</span>: <span class="pl-s"><span class="pl-pds">'</span>library<span class="pl-pds">'</span></span>
-        exclude <span class="pl-c1">group</span>: <span class="pl-s"><span class="pl-pds">'</span>com.android.support<span class="pl-pds">'</span></span>, <span class="pl-c1">module</span>: <span class="pl-s"><span class="pl-pds">'</span>appcompat-v7<span class="pl-pds">'</span></span>
-}</pre></div>
-
 <h2><a id="user-content-usages" class="anchor" href="#usages" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Usages</h2>
 
 <p>In the xml : </p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">fr</span>.ganfra.materialspinner.MaterialSpinner
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.materialspinner.MaterialSpinner
         <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/spinner<span class="pl-pds">"</span></span>
         <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>fill_parent<span class="pl-pds">"</span></span>
         <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span> 
