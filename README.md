@@ -1,5 +1,5 @@
 # MaterialDesignLibrary
-<article class="markdown-body entry-content" itemprop="text"><p><a href="/images/logo.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/logo.png" alt="Material design library logo" style="max-width:100%;"></a></p>
+<article class="markdown-body entry-content" itemprop="text"><p><a href="/images/logo.png" target="_blank"><img src="/images/logo.png" alt="Material design library logo" style="max-width:100%;"></a></p>
 
 <h1><a id="user-content-material-design-android-library" class="anchor" href="#material-design-android-library" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Material Design Android Library</h1>
 
@@ -94,7 +94,7 @@ To use this component:</p>
 
 <h6><a id="user-content-flat-button" class="anchor" href="#flat-button" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Flat Button</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/flat_button.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/flat_button.png" alt="flat button" style="max-width:100%;"></a></p>
+<p><a href="/images/flat_button.png" target="_blank"><img src="/images/flat_button.png" alt="flat button" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ButtonFlat
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/buttonflat<span class="pl-pds">"</span></span>
@@ -105,7 +105,7 @@ To use this component:</p>
 
 <h6><a id="user-content-rectangle-button" class="anchor" href="#rectangle-button" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Rectangle Button</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/rectangle_button.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/rectangle_button.png" alt="rectangle button" style="max-width:100%;"></a></p>
+<p><a href="/images/rectangle_button.png" target="_blank"><img src="images/rectangle_button.png" alt="rectangle button" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ButtonRectangle
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/button<span class="pl-pds">"</span></span>
@@ -116,7 +116,7 @@ To use this component:</p>
 
 <h6><a id="user-content-float-button" class="anchor" href="#float-button" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Float Button</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/float_button.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/float_button.png" alt="float button" style="max-width:100%;"></a></p>
+<p><a href="/images/float_button.png" target="_blank"><img src="/master/images/float_button.png" alt="float button" style="max-width:100%;"></a></p>
 
 <blockquote>
 <p>It is recommended to put this component in the right-bottom of the screen. To use this component write this code in your xml file.
@@ -144,7 +144,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-float-small-button" class="anchor" href="#float-small-button" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Float small button</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/float_small_button.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/float_small_button.png" alt="float small button" style="max-width:100%;"></a></p>
+<p><a href="/images/float_small_button.png" target="_blank"><img src="/images/float_small_button.png" alt="float small button" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ButtonFloatSmall
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/buttonFloatSmall<span class="pl-pds">"</span></span>
@@ -157,7 +157,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-checkbox" class="anchor" href="#checkbox" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>CheckBox</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/checkbox.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/checkbox.png" alt="checkbox" style="max-width:100%;"></a></p>
+<p><a href="/images/checkbox.png" target="_blank"><img src="/images/checkbox.png" alt="checkbox" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.CheckBox
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/checkBox<span class="pl-pds">"</span></span>
@@ -168,7 +168,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-switch" class="anchor" href="#switch" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Switch</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/switch.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/switch.png" alt="switch" style="max-width:100%;"></a></p>
+<p><a href="/images/switch.png" target="_blank"><img src="/images/switch.png" alt="switch" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.Switch
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/switchView<span class="pl-pds">"</span></span>
@@ -181,7 +181,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-progress-bar-circular-indeterminate" class="anchor" href="#progress-bar-circular-indeterminate" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Progress bar circular indeterminate</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/progress_bar_circular_indeterminate.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/progress_bar_circular_indeterminate.png" alt="progress bar circular indeterminate" style="max-width:100%;"></a></p>
+<p><a href="/images/progress_bar_circular_indeterminate.png" target="_blank"><img src="/images/progress_bar_circular_indeterminate.png" alt="progress bar circular indeterminate" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ProgressBarCircularIndeterminate
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/progressBarCircularIndeterminate<span class="pl-pds">"</span></span>
@@ -191,7 +191,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-progress-bar-indeterminate" class="anchor" href="#progress-bar-indeterminate" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Progress bar indeterminate</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/progress_bar_indeterminate.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/progress_bar_indeterminate.png" alt="progress bar indeterminate" style="max-width:100%;"></a></p>
+<p><a href="/images/progress_bar_indeterminate.png" target="_blank"><img src="/images/progress_bar_indeterminate.png" alt="progress bar indeterminate" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ProgressBarIndeterminate
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/progressBarIndeterminate<span class="pl-pds">"</span></span>
@@ -201,7 +201,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-progress-bar-indeterminate-determinate" class="anchor" href="#progress-bar-indeterminate-determinate" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Progress bar indeterminate determinate</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/progress_bar_indeterminate_determinate.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/progress_bar_indeterminate_determinate.png" alt="Progress bar indeterminate determinate" style="max-width:100%;"></a></p>
+<p><a href="/images/progress_bar_indeterminate_determinate.png" target="_blank"><img src="/images/progress_bar_indeterminate_determinate.png" alt="Progress bar indeterminate determinate" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ProgressBarIndeterminateDeterminate
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/progressBarIndeterminateDeterminate<span class="pl-pds">"</span></span>
@@ -217,7 +217,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-progress-bar-determinate" class="anchor" href="#progress-bar-determinate" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Progress bar determinate</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/progress_bar_determinate.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/progress_bar_determinate.png" alt="Progress bar determinate" style="max-width:100%;"></a></p>
+<p><a href="/images/progress_bar_determinate.png" target="_blank"><img src="/images/progress_bar_determinate.png" alt="Progress bar determinate" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.ProgressBarDeterminate
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/progressDeterminate<span class="pl-pds">"</span></span>
@@ -231,7 +231,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-slider" class="anchor" href="#slider" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Slider</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/slider.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/slider.png" alt="Slider" style="max-width:100%;"></a></p>
+<p><a href="/images/slider.png" target="_blank"><img src="/images/slider.png" alt="Slider" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.Slider
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/slider<span class="pl-pds">"</span></span>
@@ -244,7 +244,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h6><a id="user-content-slider-with-number-indicator" class="anchor" href="#slider-with-number-indicator" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Slider with number indicator</h6>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/slider_with_number_indicator.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/slider_with_number_indicator.png" alt="Slider with number indicator" style="max-width:100%;"></a></p>
+<p><a href="/slider_with_number_indicator.png" target="_blank"><img src="/slider_with_number_indicator.png" alt="Slider with number indicator" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.views.Slider
                 <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/slider<span class="pl-pds">"</span></span>
@@ -259,7 +259,7 @@ Put your icon in the icon attribute to set the drawable icon for this component.
 
 <h4><a id="user-content-snackbar" class="anchor" href="#snackbar" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>SnackBar</h4>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/snackbar.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/snackbar.png" alt="Snackbar" style="max-width:100%;"></a></p>
+<p><a href="/images/snackbar.png" target="_blank"><img src="/images/snackbar.png" alt="Snackbar" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-source-java"><pre><span class="pl-smi">SnackBar</span> snackbar <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">SnackBar</span>(<span class="pl-smi">Activity</span> activity, <span class="pl-smi">String</span> text, <span class="pl-smi">String</span> buttonText, <span class="pl-smi">View</span><span class="pl-k">.</span><span class="pl-smi">OnClickListener</span> onClickListener);
 snackbar<span class="pl-k">.</span>show();</pre></div>
@@ -270,7 +270,7 @@ snackbar<span class="pl-k">.</span>show();</pre></div>
 
 <h4><a id="user-content-dialog" class="anchor" href="#dialog" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Dialog</h4>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/dialog.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/dialog.png" alt="Dialog" style="max-width:100%;"></a></p>
+<p><a href="/images/dialog.png" target="_blank"><img src="/images/dialog.png" alt="Dialog" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-source-java"><pre><span class="pl-smi">Dialog</span> dialog <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">Dialog</span>(<span class="pl-smi">Context</span> context,<span class="pl-smi">String</span> title, <span class="pl-smi">String</span> message);
 dialog<span class="pl-k">.</span>show();</pre></div>
@@ -290,7 +290,7 @@ dialog<span class="pl-k">.</span>setOnCancelButtonClickListener(<span class="pl-
 
 <h4><a id="user-content-color-selector" class="anchor" href="#color-selector" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Color selector</h4>
 
-<p><a href="/IvanGarza07/MaterialDesignLibrary/blob/master/images/color_selector.png" target="_blank"><img src="/IvanGarza07/MaterialDesignLibrary/raw/master/images/color_selector.png" alt="Color selector" style="max-width:100%;"></a></p>
+<p><a href="/images/color_selector.png" target="_blank"><img src="/images/color_selector.png" alt="Color selector" style="max-width:100%;"></a></p>
 
 <div class="highlight highlight-source-java"><pre><span class="pl-smi">ColorSelector</span> colorSelector <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">ColorSelector</span>(<span class="pl-smi">Context</span> context,<span class="pl-k">int</span> intialColor, <span class="pl-smi">OnColorSelectedListener</span> onColorSelectedListener);
 colorSelector<span class="pl-k">.</span>show();</pre></div>
@@ -303,7 +303,7 @@ Add floating label text, hint and error messages.</p>
 
 <h2><a id="user-content-screenshots" class="anchor" href="#screenshots" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Screenshots</h2>
 
-<p><a href="/ganfra/MaterialSpinner/blob/master/screenshots/screenshot.gif" target="_blank"><img src="/ganfra/MaterialSpinner/raw/master/screenshots/screenshot.gif" alt="MaterialSpinner" style="max-width:100%;"></a></p>
+<p><a href="/images/screenshot.gif" target="_blank"><img src="/images/screenshot.gif" alt="MaterialSpinner" style="max-width:100%;"></a></p>
 
 <h2><a id="user-content-usages" class="anchor" href="#usages" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Usages</h2>
 
