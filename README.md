@@ -309,7 +309,7 @@ Add floating label text, hint and error messages.</p>
 
 <p>In the xml : </p>
 
-<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.materialspinner.MaterialSpinner
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.ivan.materialdesign.widgets.MaterialSpinner
         <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>@+id/spinner<span class="pl-pds">"</span></span>
         <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>fill_parent<span class="pl-pds">"</span></span>
         <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span> 
