@@ -41,6 +41,8 @@
         <attr name="ms_hint" format="string"/>
         <attr name="ms_hintColor" format="color"/>
         <attr name="ms_floatingLabelText" format="string"/>
+        <!-- The floating label's text size. 12sp by default. -->
+        <attr name="ms_floatingLabelTextSize" format="dimension" />
         <attr name="ms_floatingLabelColor" format="color"/>
         <attr name="ms_multiline" format="boolean"/>
         <attr name="ms_nbErrorLines" format="integer"/>
@@ -82,6 +84,8 @@
         <attr name="met_helperTextColor" format="color" />
         <!-- Font of the paint used to draw accent texts -->
         <attr name="met_accentTypeface" format="string" />
+        <!-- Font of the paint used to draw accent texts -->
+        <attr name="met_floatingLabelTypeface" format="string" />
         <!-- Font used on view -->
         <attr name="met_typeface" format="string" />
         <!-- Custom float label text -->
@@ -110,6 +114,8 @@
         <attr name="met_bottomTextSize" format="dimension" />
         <!-- Always show the floating label, instead of animating it in/out. False by default. -->
         <attr name="met_floatingLabelAlwaysShown" format="boolean" />
+        <!-- Always enable the floating label, instead of animating it in/out. False by default. -->
+        <attr name="met_floatingLabelAlwaysEnable" format="boolean" />
         <!-- Always show the helper text, no matter if the edit text is focused. False by default. -->
         <attr name="met_helperTextAlwaysShown" format="boolean" />
         <!-- Whether use animation to show/hide the floating label. True by default. -->

@@ -168,6 +168,11 @@ public class MaterialEditText extends AppCompatEditText {
   private boolean floatingLabelAlwaysShown;
 
   /**
+   * Always show the floating label, instead of animating it in/out. False by default.
+   */
+  private boolean floatingLabelAlwaysEnable;
+
+  /**
    * Always show the helper text, no matter if the edit text is focused. False by default.
    */
   private boolean helperTextAlwaysShown;
@@ -231,6 +236,11 @@ public class MaterialEditText extends AppCompatEditText {
    * The font used for the accent texts (floating label, error/helper text, character counter, etc.)
    */
   private Typeface accentTypeface;
+
+  /**
+   * The font used for the accent texts (floating label)
+   */
+  private Typeface floatingLabelTypeface;
 
   /**
    * The font used on the view (EditText content)
@@ -305,6 +315,7 @@ public class MaterialEditText extends AppCompatEditText {
   private ArgbEvaluator focusEvaluator = new ArgbEvaluator();
   Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
   TextPaint textPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
+  TextPaint floatingTextPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
   StaticLayout textLayout;
   ObjectAnimator labelAnimator;
   ObjectAnimator labelFocusAnimator;
@@ -384,6 +395,7 @@ public class MaterialEditText extends AppCompatEditText {
     helperTextColor = typedArray.getColor(R.styleable.MaterialEditText_met_helperTextColor, -1);
     minBottomTextLines = typedArray.getInt(R.styleable.MaterialEditText_met_minBottomTextLines, 0);
     String fontPathForAccent = typedArray.getString(R.styleable.MaterialEditText_met_accentTypeface);
+    String fontPathForFloatingLabel = typedArray.getString(R.styleable.MaterialEditText_met_floatingLabelTypeface);
     if (fontPathForAccent != null && !isInEditMode()) {
       accentTypeface = getCustomTypeface(fontPathForAccent);
       textPaint.setTypeface(accentTypeface);
@@ -396,6 +408,10 @@ public class MaterialEditText extends AppCompatEditText {
     floatingLabelText = typedArray.getString(R.styleable.MaterialEditText_met_floatingLabelText);
     if (floatingLabelText == null) {
       floatingLabelText = getHint();
+      if(fontPathForFloatingLabel != null){
+        floatingLabelTypeface = getCustomTypeface(fontPathForFloatingLabel);
+        floatingTextPaint.setTypeface(floatingLabelTypeface);
+      }
     }
     floatingLabelPadding = typedArray.getDimensionPixelSize(R.styleable.MaterialEditText_met_floatingLabelPadding, bottomSpacing);
     floatingLabelTextSize = typedArray.getDimensionPixelSize(R.styleable.MaterialEditText_met_floatingLabelTextSize, getResources().getDimensionPixelSize(R.dimen.floating_label_text_size));
@@ -411,6 +427,7 @@ public class MaterialEditText extends AppCompatEditText {
     clearButtonBitmaps = generateIconBitmaps(R.drawable.met_ic_clear);
     iconPadding = typedArray.getDimensionPixelSize(R.styleable.MaterialEditText_met_iconPadding, getPixel(16));
     floatingLabelAlwaysShown = typedArray.getBoolean(R.styleable.MaterialEditText_met_floatingLabelAlwaysShown, false);
+    floatingLabelAlwaysEnable = typedArray.getBoolean(R.styleable.MaterialEditText_met_floatingLabelAlwaysEnable, false);
     helperTextAlwaysShown = typedArray.getBoolean(R.styleable.MaterialEditText_met_helperTextAlwaysShown, false);
     validateOnFocusLost = typedArray.getBoolean(R.styleable.MaterialEditText_met_validateOnFocusLost, false);
     checkCharactersCountAtBeginning = typedArray.getBoolean(R.styleable.MaterialEditText_met_checkCharactersCountAtBeginning, true);
@@ -632,6 +649,14 @@ public class MaterialEditText extends AppCompatEditText {
     invalidate();
   }
 
+  public boolean isFloatingLabelAlwaysEnable() {
+    return floatingLabelAlwaysEnable;
+  }
+
+  public void setFloatingLabelAlwaysEnable(boolean floatingLabelAlwaysEnable) {
+    this.floatingLabelAlwaysEnable = floatingLabelAlwaysEnable;
+  }
+
   public boolean isHelperTextAlwaysShown() {
     return helperTextAlwaysShown;
   }
@@ -657,6 +682,20 @@ public class MaterialEditText extends AppCompatEditText {
 
   public boolean isHideUnderline() {
     return hideUnderline;
+  }
+
+  @Nullable
+  public Typeface getFloatingLabelTypeface() {
+    return floatingLabelTypeface;
+  }
+
+  /**
+   * Set typeface used for the accent texts (floating label)
+   */
+  public void setFloatingLabelTypeface(Typeface floatingLabelTypeface) {
+    this.floatingLabelTypeface = floatingLabelTypeface;
+    this.floatingTextPaint.setTypeface(floatingLabelTypeface);
+    postInvalidate();
   }
 
   /**
@@ -738,6 +777,7 @@ public class MaterialEditText extends AppCompatEditText {
   private void initPadding() {
     extraPaddingTop = floatingLabelEnabled ? floatingLabelTextSize + floatingLabelPadding : floatingLabelPadding;
     textPaint.setTextSize(bottomTextSize);
+    floatingTextPaint.setTextSize(bottomTextSize);
     Paint.FontMetrics textMetrics = textPaint.getFontMetrics();
     extraPaddingBottom = (int) ((textMetrics.descent - textMetrics.ascent) * currentBottomLines) + (hideUnderline ? bottomSpacing : bottomSpacing * 2);
     extraPaddingLeft = iconLeftBitmaps == null ? 0 : (iconOuterWidth + iconPadding);
@@ -817,6 +857,7 @@ public class MaterialEditText extends AppCompatEditText {
     }
     int destBottomLines;
     textPaint.setTextSize(bottomTextSize);
+    floatingTextPaint.setTextSize(bottomTextSize);
     if (tempErrorText != null || helperText != null) {
       Layout.Alignment alignment = (getGravity() & Gravity.RIGHT) == Gravity.RIGHT || isRTL() ?
           Layout.Alignment.ALIGN_OPPOSITE : (getGravity() & Gravity.LEFT) == Gravity.LEFT ?
@@ -895,7 +936,8 @@ public class MaterialEditText extends AppCompatEditText {
           if (hasFocus) {
             getLabelFocusAnimator().start();
           } else {
-            getLabelFocusAnimator().reverse();
+            if(!floatingLabelAlwaysEnable)
+              getLabelFocusAnimator().reverse();
           }
         }
         if (validateOnFocusLost && !hasFocus) {
@@ -1359,12 +1401,15 @@ public class MaterialEditText extends AppCompatEditText {
 
     // draw the floating label
     if (floatingLabelEnabled && !TextUtils.isEmpty(floatingLabelText)) {
-      textPaint.setTextSize(floatingLabelTextSize);
+      floatingTextPaint.setTextSize(floatingLabelTextSize);
       // calculate the text color
-      textPaint.setColor((Integer) focusEvaluator.evaluate(focusFraction * (isEnabled() ? 1 : 0), floatingLabelTextColor != -1 ? floatingLabelTextColor : (baseColor & 0x00ffffff | 0x44000000), primaryColor));
+      if(highlightFloatingLabel)
+        floatingTextPaint.setColor(floatingLabelTextColor);
+      else
+        floatingTextPaint.setColor((Integer) focusEvaluator.evaluate(focusFraction * (isEnabled() ? 1 : 0), floatingLabelTextColor != -1 ? floatingLabelTextColor : (baseColor & 0x00ffffff | 0x44000000), primaryColor));
 
       // calculate the horizontal position
-      float floatingLabelWidth = textPaint.measureText(floatingLabelText.toString());
+      float floatingLabelWidth = floatingTextPaint.measureText(floatingLabelText.toString());
       int floatingLabelStartX;
       if ((getGravity() & Gravity.RIGHT) == Gravity.RIGHT || isRTL()) {
         floatingLabelStartX = (int) (endX - floatingLabelWidth);
@@ -1380,10 +1425,10 @@ public class MaterialEditText extends AppCompatEditText {
 
       // calculate the alpha
       int alpha = ((int) ((floatingLabelAlwaysShown ? 1 : floatingLabelFraction) * 0xff * (0.74f * focusFraction * (isEnabled() ? 1 : 0) + 0.26f) * (floatingLabelTextColor != -1 ? 1 : Color.alpha(floatingLabelTextColor) / 256f)));
-      textPaint.setAlpha(alpha);
+      floatingTextPaint.setAlpha(alpha);
 
       // draw the floating label
-      canvas.drawText(floatingLabelText.toString(), floatingLabelStartX, floatingLabelStartY, textPaint);
+      canvas.drawText(floatingLabelText.toString(), floatingLabelStartX, floatingLabelStartY, floatingTextPaint);
     }
 
     // draw the bottom ellipsis

@@ -31,7 +31,7 @@
                 app:met_floatingLabel="highlight"
                 app:met_maxCharacters="20"
                 app:met_primaryColor="?colorAccent"
-                app:met_singleLineEllipsis="true" />
+                app:met_singleLineEllipsis="true"/>
 
             <com.ivan.materialdesign.materialedittext.MaterialEditText
                 android:layout_width="match_parent"
@@ -427,6 +427,27 @@
                 app:met_iconLeft="@drawable/ic_phone"
                 app:met_iconPadding="0dp"
                 app:met_maxCharacters="5" />
+
+            <com.ivan.materialdesign.materialedittext.MaterialEditText
+                android:id="@+id/editTextCalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prueba"
+                android:textSize="16sp"
+                android:inputType="text"
+                app:met_baseColor="#000"
+                app:met_textColorHint="#000"
+                app:met_floatingLabelTextColor="#00C"
+                app:met_primaryColor="#000000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAnimating="true"
+                app:met_singleLineEllipsis="true"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_errorColor="#F00"
+                app:met_floatingLabelAlwaysEnable="true"
+                app:met_typeface="fonts/Expressway_Regular.ttf"
+                app:met_accentTypeface="fonts/Expressway_Regular.ttf"
+                app:met_floatingLabelTypeface="fonts/Expressway_Bold.ttf"/>
 
         </LinearLayout>
     </LinearLayout>

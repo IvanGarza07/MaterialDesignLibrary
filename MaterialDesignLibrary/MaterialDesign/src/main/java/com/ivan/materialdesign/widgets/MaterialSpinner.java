@@ -76,6 +76,7 @@ public class MaterialSpinner extends AppCompatSpinner implements ValueAnimator.A
 
     //Properties about Floating Label (
     private float floatingLabelPercent;
+    private int floatingLabelTextSize;
     private ObjectAnimator floatingLabelAnimator;
     private boolean isSelected;
     private boolean floatingLabelVisible;
@@ -164,6 +165,7 @@ public class MaterialSpinner extends AppCompatSpinner implements ValueAnimator.A
         hint = array.getString(R.styleable.MaterialSpinner_ms_hint);
         hintColor = array.getColor(R.styleable.MaterialSpinner_ms_hintColor, baseColor);
         floatingLabelText = array.getString(R.styleable.MaterialSpinner_ms_floatingLabelText);
+        floatingLabelTextSize = array.getDimensionPixelSize(R.styleable.MaterialSpinner_ms_floatingLabelTextSize, getResources().getDimensionPixelSize(R.dimen.floating_label_text_size));
         floatingLabelColor = array.getColor(R.styleable.MaterialSpinner_ms_floatingLabelColor, baseColor);
         multiline = array.getBoolean(R.styleable.MaterialSpinner_ms_multiline, true);
         minNbErrorLines = array.getInt(R.styleable.MaterialSpinner_ms_nbErrorLines, 1);
@@ -432,6 +434,7 @@ public class MaterialSpinner extends AppCompatSpinner implements ValueAnimator.A
 
         //Floating Label Drawing
         if ((hint != null || floatingLabelText != null) && enableFloatingLabel) {
+            textPaint.setTextSize(floatingLabelTextSize);
             if (isSelected || hasFocus()) {
                 textPaint.setColor(highlightColor);
             } else {
