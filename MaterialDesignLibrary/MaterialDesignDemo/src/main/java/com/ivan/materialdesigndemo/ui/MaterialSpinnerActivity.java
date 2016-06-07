@@ -67,6 +67,7 @@ public class MaterialSpinnerActivity extends AppCompatActivity {
         spinner5 = (MaterialSpinner) findViewById(R.id.spinner5);
         spinner5.setAdapter(adapter);
         spinner5.setHint("Select an item");
+        spinner5.setFloatingLabelTextSize(50);
     }
 
 

@@ -406,13 +406,14 @@ public class MaterialEditText extends AppCompatEditText {
       setTypeface(typeface);
     }
     floatingLabelText = typedArray.getString(R.styleable.MaterialEditText_met_floatingLabelText);
-    if (floatingLabelText == null) {
+    if (floatingLabelText == null)
       floatingLabelText = getHint();
-      if(fontPathForFloatingLabel != null){
-        floatingLabelTypeface = getCustomTypeface(fontPathForFloatingLabel);
-        floatingTextPaint.setTypeface(floatingLabelTypeface);
-      }
+
+    if(fontPathForFloatingLabel != null){
+      floatingLabelTypeface = getCustomTypeface(fontPathForFloatingLabel);
+      floatingTextPaint.setTypeface(floatingLabelTypeface);
     }
+
     floatingLabelPadding = typedArray.getDimensionPixelSize(R.styleable.MaterialEditText_met_floatingLabelPadding, bottomSpacing);
     floatingLabelTextSize = typedArray.getDimensionPixelSize(R.styleable.MaterialEditText_met_floatingLabelTextSize, getResources().getDimensionPixelSize(R.dimen.floating_label_text_size));
     floatingLabelTextColor = typedArray.getColor(R.styleable.MaterialEditText_met_floatingLabelTextColor, -1);
@@ -903,10 +904,13 @@ public class MaterialEditText extends AppCompatEditText {
   }
 
   private void initFloatingLabel() {
+    if(floatingLabelEnabled && !TextUtils.isEmpty(getText()))
+      getLabelFocusAnimator().start();
     // observe the text changing
     addTextChangedListener(new TextWatcher() {
       @Override
       public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
       }
 
       @Override

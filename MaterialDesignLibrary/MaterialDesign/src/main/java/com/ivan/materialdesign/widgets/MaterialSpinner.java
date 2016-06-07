@@ -638,6 +638,15 @@ public class MaterialSpinner extends AppCompatSpinner implements ValueAnimator.A
         setFloatingLabelText(floatingLabelText);
     }
 
+    public int getFloatingLabelTextSize() {
+        return floatingLabelTextSize;
+    }
+
+    public void setFloatingLabelTextSize(int floatingLabelTextSize) {
+        this.floatingLabelTextSize = floatingLabelTextSize;
+        invalidate();
+    }
+
     public CharSequence getFloatingLabelText() {
         return this.floatingLabelText;
     }
