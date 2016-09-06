@@ -11,6 +11,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -47,7 +48,7 @@ public class CheckBox extends CustomView {
 		int bacgroundColor = attrs.getAttributeResourceValue(ANDROIDXML,
 				"background", -1);
 		if (bacgroundColor != -1) {
-			setBackgroundColor(getResources().getColor(bacgroundColor));
+			setBackgroundColor(ContextCompat.getColor(getContext(), bacgroundColor));
 		} else {
 			// Color by hexadecimal
 			// Color by hexadecimal
@@ -64,8 +65,7 @@ public class CheckBox extends CustomView {
 				public void run() {
 					setChecked(check);
 					setPressed(false);
-					changeBackgroundColor(getResources().getColor(
-							android.R.color.transparent));
+					changeBackgroundColor(ContextCompat.getColor(getContext(), android.R.color.transparent));
 				}
 			});
 
@@ -119,8 +119,7 @@ public class CheckBox extends CustomView {
 				changeBackgroundColor((check) ? makePressColor() : Color
 						.parseColor("#446D6D6D"));
 			} else if (event.getAction() == MotionEvent.ACTION_UP) {
-				changeBackgroundColor(getResources().getColor(
-						android.R.color.transparent));
+				changeBackgroundColor(ContextCompat.getColor(getContext(), android.R.color.transparent));
 				press = false;
 				if ((event.getX() <= getWidth() && event.getX() >= 0)
 						&& (event.getY() <= getHeight() && event.getY() >= 0)) {
@@ -187,8 +186,7 @@ public class CheckBox extends CustomView {
 		invalidate();
 		this.check = check;
 		setPressed(false);
-		changeBackgroundColor(getResources().getColor(
-				android.R.color.transparent));
+		changeBackgroundColor(ContextCompat.getColor(getContext(), android.R.color.transparent));
 		if (check) {
 			step = 0;
 		}

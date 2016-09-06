@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.TextView;
 import com.ivan.materialdesign.R;
@@ -29,7 +30,7 @@ public class Card extends CustomView {
 		// Color by resource
 		int bacgroundColor = attrs.getAttributeResourceValue(ANDROIDXML,"background",-1);
 		if(bacgroundColor != -1){
-			setBackgroundColor(getResources().getColor(bacgroundColor));
+			setBackgroundColor(ContextCompat.getColor(getContext(), bacgroundColor));
 		}else{
 			// Color by hexadecimal
 			String background = attrs.getAttributeValue(ANDROIDXML,"background");
