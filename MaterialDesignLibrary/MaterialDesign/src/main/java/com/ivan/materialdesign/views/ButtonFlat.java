@@ -46,7 +46,7 @@ public class ButtonFlat extends Button {
         }
         if (text != null) {
             textButton = new TextView(getContext());
-            textButton.setText(text.toUpperCase());
+            textButton.setText(text);
             textButton.setTextColor(backgroundColor);
             textButton.setTypeface(null, Typeface.BOLD);
             RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
