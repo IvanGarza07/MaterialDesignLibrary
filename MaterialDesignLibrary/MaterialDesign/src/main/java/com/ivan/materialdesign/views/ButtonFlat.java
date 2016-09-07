@@ -4,6 +4,7 @@ import com.ivan.materialdesign.R;
 import com.ivan.materialdesign.utils.Utils;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 public class ButtonFlat extends Button {
 
     TextView textButton;
+    private Typeface typeface;
 
     public ButtonFlat(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -35,7 +37,7 @@ public class ButtonFlat extends Button {
     @Override
     protected void setAttributes(AttributeSet attrs) {
         // Set text button
-        String text = null;
+        String text;
         int textResource = attrs.getAttributeResourceValue(ANDROIDXML, "text", -1);
         if (textResource != -1) {
             text = getResources().getString(textResource);
@@ -52,15 +54,24 @@ public class ButtonFlat extends Button {
             textButton.setLayoutParams(params);
             addView(textButton);
         }
-        int bacgroundColor = attrs.getAttributeResourceValue(ANDROIDXML, "background", -1);
-        if (bacgroundColor != -1) {
-            setBackgroundColor(ContextCompat.getColor(getContext(), bacgroundColor));
+        int textColor = attrs.getAttributeResourceValue(ANDROIDXML, "textColor", -1);
+        if (textColor != -1) {
+            textButton.setTextColor(ContextCompat.getColor(getContext(), textColor));
         } else {
             // Color by hexadecimal
             // Color by hexadecimal
-            background = attrs.getAttributeIntValue(ANDROIDXML, "background", -1);
-            if (background != -1)
-                setBackgroundColor(background);
+            textColor = attrs.getAttributeIntValue(ANDROIDXML, "textColor", -1);
+            if (textColor != -1)
+                textButton.setTextColor(textColor);
+        }
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.CustomAttributes);
+        String typefacePath = typedArray.getString(R.styleable.CustomAttributes_typeFaceButton);
+        if (typefacePath != null) {
+            typeface = Typeface.createFromAsset(getContext().getAssets(), typefacePath);
+        }
+        typedArray.recycle();
+        if (typeface != null) {
+            textButton.setTypeface(typeface);
         }
     }
 
@@ -90,8 +101,6 @@ public class ButtonFlat extends Button {
 
     /**
      * Make a dark color to ripple effect
-     *
-     * @return
      */
     @Override
     protected int makePressColor() {
@@ -100,7 +109,15 @@ public class ButtonFlat extends Button {
 
     @Override
     public void setText(String text) {
-        textButton.setText(text.toUpperCase());
+        textButton.setText(text);
+    }
+
+    @Override
+    public void setTextColor(int color) {
+        backgroundColor = color;
+        if (isEnabled())
+            beforeBackground = backgroundColor;
+        textButton.setTextColor(color);
     }
 
     // Set color of background
@@ -116,6 +133,7 @@ public class ButtonFlat extends Button {
         return textButton;
     }
 
+    @Override
     public String getText() {
         return textButton.getText().toString();
     }

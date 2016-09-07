@@ -105,8 +105,6 @@ public class ButtonRectangle extends Button {
 
     @Override
     protected void onDraw(Canvas canvas) {
-//		if(!txtCenter)
-//		centrarTexto();
         super.onDraw(canvas);
         if (x != -1) {
             Rect src = new Rect(0, 0, getWidth() - Utils.dpToPx(6, getResources()), getHeight() - Utils.dpToPx(7, getResources()));
